@@ -1,0 +1,581 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	list-style:none;
+	text-decoration:none;
+}
+html{
+	    scroll-behavior: smooth;
+}
+body{
+	
+}
+.contaner{
+	width:90%;
+	margin:0 auto;
+	
+}
+@media (min-width: 667px){
+	.contaner{
+	width:80%;
+	margin:0 auto;
+}
+}
+/* @media (min-width: 991px){
+	.contaner{
+	width:60%;
+	margin:0 auto;
+} 
+}*/
+header{
+    background: green;
+    width: 100%;
+}
+.header{
+	height:100vh;
+}
+.lank{
+	
+    display: flex;
+    gap: 20px;
+    height: 80px;
+    background: #fff;
+    border-radius: 10px;
+    flex-direction: column;
+    overflow: hidden;
+    position: fixed;
+    top: 4px;
+    z-index: 100;
+    width: 100%;
+    margin: 0 auto;
+	    box-shadow: 0 0 10px #000;
+	
+/* 	display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 80px;
+    background: #fff;
+    border-radius: 10px; */
+}
+.lank.actaveToggle{
+	height:fit-content;
+}
+.lank .loge{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+}
+.lank h1{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: darkblue;
+}
+.lank ul{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    height: 100%;
+    padding: 15px 5px;
+	
+}
+.lank ul li{
+    text-transform: uppercase;	
+	padding:10px 0;
+
+}
+.lank ul .active{
+	border-bottom:1px solid green;
+}
+.header-text{
+    display: flex;
+    height: calc(100% - 80px);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-text .text1{
+    height:fit-content;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    flex-direction: column;
+    align-items: center;	
+}
+.header-text .text1 h2{
+    margin: 10px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #fff;
+    font-weight: bold;
+}
+.header-text .text1 img{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	margin: 10px 0;
+}
+.header-text .text1 p{
+	margin: 10px 0;
+    letter-spacing: 1.7px;
+    word-break: break-all;
+    line-height: 2;
+    font-size: 20px;
+    background: #fff;
+    color: green;
+    font-weight: bold;
+	padding:10px;
+	border-radius:15px;
+}
+.header-text .text1 .text1Link{
+	margin: 10px 0;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    font-weight: bold;
+
+}
+.header-text .img {
+    position: relative;
+    height: 50%;
+    width: 100%;
+}
+.header-text .img .imgImg{
+	 background: #fff;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.header-text .img .imgImg img{
+	width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+/* iconLogo */
+@media (min-width: 667px){
+	.lank .loge .iconLogo{
+			display:none;
+		}
+	.lank{
+			flex-direction: row;	
+			    width: 80%;
+		}
+	.lank ul{
+			flex-direction: row;
+			padding:0 0;	
+			    align-items: center;
+		}
+	.header-text{
+		flex-direction: row;
+		align-items: center;
+	}
+	.header-text .img{
+		height:50%;
+	}.header-text .text1{
+		height:50%;
+	}
+}
+
+/* start about*/
+.about{
+	    padding: 100px 0;
+	background-color:#fff;
+}
+.sectionAbout{
+	
+}
+
+.sectionAbout .img{
+    width: 100%;
+/*     height: 300px; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+    margin: 10px 0;
+	background:#fff;
+}
+.sectionAbout .img .imgImg{
+	height:100%;
+	width:100%;
+	border-radius: 10px;
+}
+.sectionAbout .img .imgImg img{
+	width:100%;
+	height:100%;
+	border-radius: 10px;
+}
+
+
+.sectionAbout .text1{
+	width: 100%;
+ /*    height: fit-content; */
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+
+ 
+}
+.sectionAbout .text1 .imgHeider{
+	height:200px;
+	background-color:green;
+	display:flex;
+	align-items:center;
+	justify-content:end;
+	padding:0 30px;
+	border-radius: 10px;
+}
+.sectionAbout .text1 .imgHeider img{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+}
+.sectionAbout .text1 h2{
+	margin:10px 0;
+	text-align:center;
+	padding: 15px 0;
+	font-size:25px;
+	font-weight:bold;
+}
+.sectionAbout .text1 p{
+    letter-spacing: 1.7px;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    word-break: break-all;
+    line-height: 1.7;
+}
+@media (min-width: 667px){
+	.sectionAbout {
+		    display: flex;
+			gap: 10px;
+			    align-items: stretch;
+		}
+	.sectionAbout .img{
+
+	}
+	.sectionAbout .img .imgImg{
+		height:50%;
+		width:100%;
+		border-radius: 10px;
+	}
+	.sectionAbout .img .imgImg img{
+		width:100%;
+		height:100%;
+		
+	}
+}
+
+.Information{
+	margin-top:30px;
+	background:#ccc;
+}
+.InformationAbout{
+	    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0;
+	align-items: start;
+}
+.InformationAbout table{
+	    background: #fff;
+    border-collapse: collapse;
+	flex:1;
+}
+.InformationAbout table tr{
+    border: 2px solid #eee;
+    text-align: center;
+}.InformationAbout table th{
+    color: green;
+    font-size: 24px;
+    border-right: 1px solid #ccc;
+    padding: 5px;	
+}.InformationAbout table td{
+	    text-align: left;
+		padding: 10px;
+}
+.InformationAbout table tr:hover{
+	background-color:#ddd;
+}
+.InformationAbout .Years{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    align-items: center;
+    justify-content: center;
+}
+.InformationAbout .Years .boxNumber{
+	background: #eee;
+    width: 153px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	gap:10px;
+}.InformationAbout .Years .boxNumber h4{
+
+}.InformationAbout .Years .boxNumber p{
+	color:green;
+}
+/* End about*/
+
+/* Start Services*/
+.sectionServices{
+	
+}
+.sectionServices .servicesheader{
+	    background: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+    gap: 30px;
+}
+.sectionServices .servicesheader img{
+		width:100px;
+	height:100px;
+	border-radius:50%;
+}
+.sectionServices .servicesheader h4{
+	color: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.sectionServices .servicesBody{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
+    padding: 20px 0px;
+    gap: 20px 10px;
+}
+
+.sectionServices .servicesBody .box{
+    padding: 20px;
+    box-shadow: 0 0 10px #000;
+    position: relative;
+    min-height: 400px;
+    overflow: hidden;
+/*     border: 3px hidden green; */
+	transition:1s;
+}
+
+.sectionServices .servicesBody .box h2{
+	    margin: 10px 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #ccc;
+}
+.sectionServices .servicesBody .box p{
+    word-break: break-word;
+    padding: 10px 0;
+    line-height: 2;
+    letter-spacing: 1.5px;
+    font-size: 20px;
+    font-weight: 500;	
+}
+.sectionServices .servicesBody .box .img{
+
+    position: absolute;
+    bottom: -36px;
+    right: 0;
+    width: 170px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(-29deg);
+	transition:1s;
+	   background:#008000a6;
+}
+.sectionServices .servicesBody .box .img img{
+    width: 100px;
+    height: 100px;
+    mix-blend-mode: darken;
+}
+.sectionServices .servicesBody .box:hover{
+	   border: 1px solid green;
+}
+.sectionServices .servicesBody .box:hover .img{
+	   background:green;
+}
+
+/* End Services*/
+
+/* Start project*/
+.project{
+    background: #00000096;
+    padding: 50px 0;	
+}
+.sectionproject{
+    overflow-x: auto;
+    box-shadow: inset 0 0 10px #000;
+    padding: 0 15px;	
+}
+
+
+.sectionproject .projectTable{
+	min-width: 659px;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin: 50px 0;
+    box-shadow: 0 0 10px #343434;
+	user-select: none;
+}
+.sectionproject .projectTable caption {
+	    font-size: 30px;
+    margin: 15px;
+    color: #eee;
+    font-weight: bold;
+}
+.sectionproject .projectTable thead tr{
+    height: 60px;
+    background: green;
+    color: #fff;
+    font-size: 30px;
+    text-transform: capitalize;	 
+}
+.sectionproject .projectTable thead tr th{
+	    padding: 10px;
+}
+.sectionproject .projectTable tbody{
+    color: #ffeb3b;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sectionproject .projectTable tbody tr{
+	    height: 50px;
+		border:1px solid green;
+}
+.sectionproject .projectTable tbody tr td{
+	padding:0 10px;
+}
+.sectionproject .projectTable tbody tr:hover{
+	background:#ccc;
+}
+
+
+/* End project*/
+
+
+/* Start contact */
+.contact{
+	    padding: 50px 0;
+    background: #eee;
+}
+.contactDeveloper{
+	
+}
+.contactDeveloper .majid{
+	
+}
+.contactDeveloper .majid .Developer{
+/* background: red; */
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;	
+	    border-bottom: 4px solid green;
+}
+.contactDeveloper .majid .Developer h1{
+	color: #000;
+    font-size: 25px;
+    font-weight: bold;
+}
+.contactDeveloper .majid .Developer p{
+    font-size: 20px;
+    color: #000;
+    font-weight: 500;	
+}
+.contactDeveloper .majid .media{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;	
+	    box-shadow: 0 0 10px #343434;
+}
+.contactDeveloper .majid .media caption{
+    font-size: 30px;
+    margin: 15px;
+    color: #000;
+    font-weight: bold;
+  	
+}
+.contactDeveloper .majid .media tr{
+	    height: 40px;
+		    border: 1px solid red
+}
+.contactDeveloper .majid .media tr th{
+	
+}
+.contactDeveloper .majid .media tr td{
+	    padding: 0 10px;
+		    text-transform: uppercase;
+}
+.contactDeveloper .majid .media tr td a i{
+	    font-size: 30px;
+}
+.contactDeveloper .majid .media tr:hover{
+	background:#ccc;
+}
+
+
+/* End contact */
+
+
+
+footer{
+	height:100px;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	    background: #00000096;
+}
+footer p{
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: darkblue;
+    font-size: 30px;
+    user-select: none;
+}	
+.scrollTop{
+	position: fixed;
+    z-index: 10;
+    bottom: 13px;
+    width: 50px;
+    height: 50px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	display:none;
+}
+.scrollTop i{
+	font-size: 37px;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateY(0px);
+    animation: scrollTop 0.5s linear infinite alternate;
+}
+/* keyframes */
+@keyframes scrollTop{
+	0%{
+	 transform: translateY(0px);		
+	}
+	100%{
+	 transform: translateY(5px);		
+	}
+}
+
